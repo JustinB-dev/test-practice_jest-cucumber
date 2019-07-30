@@ -14,11 +14,11 @@ defineFeature(feature, test => {
       testInstance = testRenderer.root;
     });
     
-    when("initially", () => {
-      // INITIALLY
+    when("initial load", () => {
+      // INITIAL LOAD
     });
     
-    then("showing 0", () => {
+    then("show 0", () => {
       const divInstance = testInstance.findByType('h1');
       expect(divInstance.props.children).toBe(0);
     });
@@ -37,7 +37,7 @@ defineFeature(feature, test => {
       buttonInstance.props.onClick();
     });
 
-    then("showing +1", () => {
+    then("show +1", () => {
       const divInstance = testInstance.findByType('h1');
       expect(divInstance.props.children).toBe(1);
     });

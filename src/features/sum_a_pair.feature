@@ -3,10 +3,10 @@ Feature: Counter
 
 Scenario: showing 0 initially
     Given mount counter
-    When initially
-    Then showing 0
+    When initial load
+    Then show 0
 
   Scenario: clicking button increments
     Given mount counter
     When clicking button
-    Then showing +1
+    Then show +1
