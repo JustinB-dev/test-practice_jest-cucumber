@@ -19,7 +19,7 @@ class Counter extends Component {
       return (
           <div>
         <h1 className='test'>{this.state.count}</h1>
-        <button onClick={this.handleClick}>
+        <button className='btn-primary' size='lg' onClick={this.handleClick}>
           Click Me
         </button>
       </div>
